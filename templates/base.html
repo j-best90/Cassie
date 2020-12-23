@@ -1,0 +1,54 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="C.A.S.S.I.E">
+    <title>C.A.S.S.I.E</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="wid=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <h1>C.A.S.S.I.E</h1>
+    <h3>Compiling of Analytics from Social and Search for Intelligent Evaluation</h3>
+    <div id="Campaign Planning" class="tabcontent">
+        <h1>Campaign Planning</h1>
+        <div id="Campaign Planning Options" class="campaign planning menu">
+        <ul>
+            <li>Forecasting</li>
+            <li>Campaign Planning: Organic</li>
+            <li>Campaign Planning: Media Buying</li>
+            <li>Campaign Planning: Hybrid</li>
+        </ul>
+        </div>
+    </div>
+    <div id="Listening" class="tabcontent">
+        <h1>Listening</h1>
+        <ul>
+            <li>Influencer Audit</li>
+            <li>Trending Topics</li>
+            <li>User Generated Content Tracker</li>
+        </ul>
+    </div>
+    <div id="Media Buying" class="tabcontent">
+        <h1>Media Buying</h1>
+        <ul>
+            <li>Media Buying Reporting</li>
+            <li>Media Buying Optimisation</li>
+        </ul>
+    </div>
+    <div id="Organic Media" class="tabcontent">
+        <h1>Organic Media</h1>
+        <ul>
+            <li>Post Scheduling</li>
+            <li>Organic Reporting</li>
+        </ul>
+    </div>
+
+<button class="tablink" onclick="openMenuTab('Campaign Planning',this,'red')" id="defautOpen">Campaign Planning</button>
+<button class="tablink" onclick="openMenuTab('Listening',this,'blue')" id="defautOpen">Listening</button>
+<button class="tablink" onclick="openMenuTab('Media Buying',this,'green')" id="defautOpen">Media Buying</button>
+<button class="tablink" onclick="openMenuTab('Organic Media',this,'purple')" id="defautOpen">Organic Media</button>
+</body>
+</html>
